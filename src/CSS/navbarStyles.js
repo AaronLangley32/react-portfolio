@@ -7,6 +7,7 @@ export const NavbarContainer = styled.div`
     position: fixed;
     z-index: 10;
     margin-left: 2rem;
+    margin-right: 2rem;
     @media screen and (max-width: 990px) {
 
     }

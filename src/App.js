@@ -2,9 +2,14 @@ import React, { useState }from 'react';
 import './App.css';
 import styled, { ThemeProvider } from 'styled-components';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './components/navbar';
 import { MdLightMode, MdDarkMode } from 'react-icons/md'
 import { lightTheme, darkTheme, GlobalStyles } from './themes';
+import Navbar from './components/navbar';
+import About from './components/aboutPage';
+import Contact from './components/contactPage';
+import Experiences from './components/experiencesPage';
+import Projects from './components/projectsPage';
+import Skills from './components/skillsPage';
 
 function App() {
   const [theme, setTheme] = useState("light")
@@ -20,6 +25,14 @@ function App() {
           {icon}
         </ThemeSwitch>
         <Navbar />
+        <Routes>
+          <Route path="/" element={<About />}/>
+          <Route path="about" element={<About />}/>
+          <Route path="experiences" element={<Experiences />}/>
+          <Route path="skills" element={<Skills />}/>
+          <Route path="projects" element={<Projects />}/>
+          <Route path="contact" element={<Contact />}/>
+        </Routes>
       </BrowserRouter>
     </ThemeProvider>
   );
