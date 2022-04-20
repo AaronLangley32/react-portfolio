@@ -46,7 +46,29 @@ export const Header1 = styled.div`
     }
 `
 export const Header2 = styled.div`
-
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: red; */
+    width: 44rem;
+    height: 10rem;
+    font-size: 4rem;
+    margin-top: 0rem;
+    font-family: OpenSans;
+    font-variation-settings: 'wght' 400, 'wdth' 75;
+    color: ${props => props.theme.fontColor};
+    @media screen and (max-width: 990px) {
+        width: 33rem;
+        height: 9rem;
+        font-size: 3rem;
+        margin-top: 0rem;
+    }
+    @media screen and (max-width: 672px) {
+        width: 22rem;
+        height: 5rem;
+        font-size: 2rem;
+        margin-top: 0rem;
+    }
 `
 export const HeaderWords = styled.div`
     transition: all 200ms ease-in-out;

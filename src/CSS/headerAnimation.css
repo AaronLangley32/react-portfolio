@@ -1,0 +1,52 @@
+.page_header div{
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateY(-300%);
+}
+.page_header2 div{
+    opacity: 0;
+    filter: blur(4px);
+}
+
+.word1 {
+    animation: slide-in 1s 0.2s forwards cubic-bezier(0.12, 0, 0.5, 0);
+}
+.word2 {
+    animation: slide-in 1s 0.4s forwards cubic-bezier(0.12, 0, 0.5, 0);
+}
+.word3 {
+    animation: slide-in 1s 0.6s forwards cubic-bezier(0.12, 0, 0.5, 0);
+}
+.word4 {
+    animation: slide-in 1s 0.8s forwards cubic-bezier(0.12, 0, 0.5, 0);
+}
+.word5 {
+    animation: slide-in 1s 1.50s forwards cubic-bezier(0.12, 0, 0.5, 0);
+}
+.word6 {
+    animation: slide-in 1s 1.52s forwards cubic-bezier(0.12, 0, 0.5, 0);
+}
+.word7 {
+    animation: slide-in 1s 1.54s forwards cubic-bezier(0.12, 0, 0.5, 0);
+}
+.word8 {
+    animation: slide-in 1s 1.56s forwards cubic-bezier(0.12, 0, 0.5, 0);
+}
+
+@keyframes slide-in {
+    0% {
+        filter: blur(4px);
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    55% {
+        opacity: 70%;
+        filter: blur(0);
+        transform: translateY(30%);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0%);
+    }
+}
