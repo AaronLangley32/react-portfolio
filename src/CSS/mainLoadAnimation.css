@@ -1,0 +1,9 @@
+.main {
+    opacity: 0;
+    animation: fade-in 1s 2.5s forwards;
+}
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+    }
+}

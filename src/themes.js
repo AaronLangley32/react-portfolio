@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export const lightTheme = {
-    body: "#f5f5f5",
+    body: "#faf9f7",
     fontColor: "#12130f",
     navLinkColor: "hsl(236, 79%, 75%)",
     navLinkHoveredColor: "hsl(236, 79%, 80%)",

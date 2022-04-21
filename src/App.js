@@ -12,7 +12,7 @@ import Projects from './components/projectsPage';
 import Skills from './components/skillsPage';
 
 function App() {
-  const [theme, setTheme] = useState("light")
+  const [theme, setTheme] = useState("dark")
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
   }
@@ -67,5 +67,4 @@ const ThemeSwitch = styled.button`
       margin: 2rem 0rem 0rem 2rem;
   }
 `
-
 export default App;

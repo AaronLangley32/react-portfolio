@@ -15,7 +15,11 @@
     src: url(./fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
     font-style: italic;
 }
-
+@font-face {
+    font-family: 'OoooBaby';
+    src: url(./fonts/OoohBaby-Regular.ttf);
+    font-style: normal;
+}
 body {
     transition: background-color 400ms ease-in-out;
 }
