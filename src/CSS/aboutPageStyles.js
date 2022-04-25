@@ -7,7 +7,7 @@ export const PageBody = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: green; */
+    background-color: green;
     margin-left: 7rem;
     position: absolute;
     height: auto;
@@ -20,7 +20,7 @@ export const PageBody = styled.div`
         margin-left: 6.5rem;
     }
     @media screen and (max-width: 672px) {
-        margin: 0rem 0rem 9rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
     }
 `
 export const Header1 = styled.div`
@@ -98,7 +98,7 @@ export const Main = styled.div`
     @media screen and (max-width: 672px) {
         margin-top: 2rem;
         width: 80vw;
-        height: 65vh;
+        height: 50vh;
         max-width: 670px;
     }
 `

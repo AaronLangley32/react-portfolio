@@ -16,6 +16,7 @@ export const NavbarContainer = styled.div`
         width: 100%;
         justify-content: center;
         margin-left: 0rem;
+        margin-right: 0rem;
         bottom: 3rem;
     }
 `
