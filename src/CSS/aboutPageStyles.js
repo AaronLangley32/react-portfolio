@@ -7,7 +7,7 @@ export const PageBody = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: green;
+    /* background-color: green; */
     margin-left: 7rem;
     position: absolute;
     height: auto;
@@ -184,6 +184,7 @@ export const PageRedirect = styled.div`
     }
 `
 export const AvatarContainer = styled.div`
+    display: none;
     width: 250px;
     height: 300px;
     /* background-color: red; */
@@ -194,7 +195,7 @@ export const AvatarContainer = styled.div`
         right: 2%;
         transform: scale(0.65);
     }
-    @media screen and (max-width: 1150px) {
+    @media screen and (max-width: 1250px) {
         display: none;
     }
 `

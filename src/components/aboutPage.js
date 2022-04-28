@@ -37,7 +37,7 @@ const About = () => {
                 }}
               >
                 {extendQA1 ? <IoIosArrowDropup /> : <IoIosArrowDropdown /> }
-              </ToggleContainer>           
+              </ToggleContainer>
           </Q>
           {extendQA1 && (
             <A>I can bring a new brand or start-up into the E-commerce space with a fully custom & modern web design.

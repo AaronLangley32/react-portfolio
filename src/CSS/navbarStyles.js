@@ -30,7 +30,7 @@ export const Menu = styled.div`
         flex-direction: row;
     }
 `
-export const MenuLink = styled.a`
+export const MenuLink = styled.div`
     display: grid;
     place-content: center;
     margin: 3rem 0rem;

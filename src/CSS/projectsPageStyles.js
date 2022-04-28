@@ -4,7 +4,7 @@ export const PageBody = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: green;
+    /* background-color: green; */
     margin-left: 7rem;
     position: absolute;
     height: auto;
@@ -52,16 +52,16 @@ export const Main = styled.div`
     background-color: red;
     margin-top: 6rem;
     width: 80rem;
-    height: 50rem;
+    aspect-ratio: 16/9;
     @media screen and (max-width: 990px) {
         margin-top: 5rem;
         width: 60rem;
-        height: 65vh;
+        aspect-ratio: 16/10;
     }
     @media screen and (max-width: 672px) {
         margin-top: 2rem;
-        width: 33vw;
-        height: 65vh;
+        width: 90%;
+        aspect-ratio: 9/12;
     }
 `
 export const ShowCaseContainer = styled.div`
@@ -78,16 +78,17 @@ export const ShowCaseContainer = styled.div`
         grid-template-rows: 1fr 1fr;
     }
 `
-export const Item = styled.button`
+export const Item = styled.a`
     width: 30rem;
-    height: 25rem;
+    aspect-ratio: 16 / 10;
     background-color: purple;
+    border: 1px solid #ffffff;
     @media screen and (max-width: 990px) {
         width: 22.5rem;
-        height: 18.75rem;
+        aspect-ratio: 16 / 10;
     }
     @media screen and (max-width: 672px) {
-        width: 15rem;
-        height: 12.5rem;
+        width: 17.5rem;
+        aspect-ratio: 16 / 10;
     }
 `
