@@ -67,7 +67,7 @@ const About = () => {
               <IoIosArrowRoundForward />
             </PageRedirect>
           </A>
-          )}  
+          )}
         </QAContainer>
         <QAContainer>
           <Q>Think I would be a good fit to your team / company?
@@ -88,7 +88,7 @@ const About = () => {
                 <IoIosArrowRoundForward />
               </PageRedirect>
             </A>
-          )}  
+          )} 
         </QAContainer>
         <QAContainer>
           <Q>In the market for a private Source Engine Level Designer?
@@ -107,12 +107,12 @@ const About = () => {
             </A>
           )}  
         </QAContainer>
-        <AvatarContainer>
+      </Main>
+      <AvatarContainer>
           <AvatarText>Hey I'm Aaron!<br />Welcome to my Hood!</AvatarText>
           <AvatarImage></AvatarImage>
           <AvatarRoom></AvatarRoom>
         </AvatarContainer>
-      </Main>
     </PageBody>
   )
 }

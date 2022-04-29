@@ -24,7 +24,7 @@ export const Header = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: red;
+    /* background-color: red; */
     width: 70rem;
     height: 10rem;
     font-size: 7rem;
@@ -49,7 +49,7 @@ export const Main = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    /* background-color: red; */
     margin-top: 6rem;
     width: 80rem;
     aspect-ratio: 16/9;
@@ -81,13 +81,21 @@ export const ShowCaseContainer = styled.div`
 export const Item = styled.a`
     width: 30rem;
     aspect-ratio: 16 / 10;
-    background-color: purple;
-    border: 1px solid #ffffff;
+    /* background-color: purple; */
+    color: ${props => props.theme.fontColor};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: OpenSans;
+    font-style: italic;
+    font-size: 2rem;
+    text-align: center;
     @media screen and (max-width: 990px) {
         width: 22.5rem;
         aspect-ratio: 16 / 10;
     }
     @media screen and (max-width: 672px) {
+        font-size: 1.5rem;
         width: 17.5rem;
         aspect-ratio: 16 / 10;
     }

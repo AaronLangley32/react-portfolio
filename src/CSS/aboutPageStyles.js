@@ -184,7 +184,7 @@ export const PageRedirect = styled.div`
     }
 `
 export const AvatarContainer = styled.div`
-    display: none;
+    display: flex;
     width: 250px;
     height: 300px;
     /* background-color: red; */
