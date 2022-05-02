@@ -2,7 +2,7 @@ import React from 'react'
 import { NavbarContainer, Menu, MenuLink } from '../CSS/navbarStyles'
 import { BsFillPersonFill } from 'react-icons/bs'
 import { FaCode, FaWrench, FaListUl } from 'react-icons/fa'
-import { IoShareSocialSharp } from 'react-icons/io5'
+import { HiAtSymbol } from 'react-icons/hi'
 import '../CSS/navbarAnimation.css'
 import { Link } from 'react-router-dom'
 
@@ -33,7 +33,7 @@ const Navbar = () => {
             </Link>
             <Link to="contact">
                 <MenuLink className="link5">
-                    <IoShareSocialSharp />
+                    <HiAtSymbol />
                 </MenuLink>
             </Link>
         </Menu>
