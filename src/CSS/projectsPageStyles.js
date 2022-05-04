@@ -13,6 +13,7 @@ export const PageBody = styled.div`
     top:0;
     left:0;
     right:0;
+    z-index: -1;
     @media screen and (max-width: 990px) {
         margin-left: 6.5rem;
     }

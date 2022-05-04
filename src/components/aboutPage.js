@@ -108,7 +108,7 @@ const About = () => {
           )}  
         </QAContainer>
       </Main>
-      <AvatarContainer>
+      <AvatarContainer className="avatarContainer">
           <AvatarText>Hey I'm Aaron!<br />Welcome to my Hood!</AvatarText>
           <AvatarImage></AvatarImage>
           <AvatarRoom></AvatarRoom>

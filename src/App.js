@@ -10,6 +10,8 @@ import Contact from './components/contactPage';
 import Experiences from './components/experiencesPage';
 import Projects from './components/projectsPage';
 import Skills from './components/skillsPage';
+import Background from './components/backgroundAnimation';
+
 
 function App() {
   const [theme, setTheme] = useState("dark")
@@ -25,6 +27,7 @@ function App() {
           {icon}
         </ThemeSwitch>
         <Navbar />
+        <Background />
         <Routes>
           <Route path="/" element={<About />}/>
           <Route path="about" element={<About />}/>

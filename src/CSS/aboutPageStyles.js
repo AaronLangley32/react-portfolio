@@ -16,6 +16,7 @@ export const PageBody = styled.div`
     top:0;
     left:0;
     right:0;
+    z-index: -1;
     @media screen and (max-width: 990px) {
         margin-left: 6.5rem;
     }
@@ -222,6 +223,7 @@ export const AvatarImage = styled.div`
     right: 0;
     bottom: 0;
     z-index: 1;
+    transition: all 1s ease-in-out;
     &:hover {
         background-image: url(${img3});
     }
@@ -230,7 +232,7 @@ export const AvatarRoom = styled.div`
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    background: linear-gradient(35deg, rgba(18,19,15,0) 50%, rgba(250,249,247,0.4) 100%);
+    /* background: linear-gradient(35deg, rgba(18,19,15,0) 50%, rgba(250,249,247,0.4) 100%); */
     position: absolute;
     right: 0;
     bottom: 0; 
