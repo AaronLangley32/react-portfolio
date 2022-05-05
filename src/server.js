@@ -2,9 +2,6 @@ const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
-const dotenv = require('dotenv')
-
-dotenv.config()
 
 const app = express();
 app.use(cors());
@@ -16,16 +13,37 @@ app.listen(5000, () => console.log("Server Running"));
 const contactEmail = nodemailer.createTransport({
     service: 'hotmail',
     auth: {
-      user: env.MAIL_NAME,
-      pass: env.MAIL_PASS,
+      user: "aaronshood@hotmail.com",
+      pass: "s2k+7,2%cWQp.H8",
     },
   });
   
   contactEmail.verify((error) => {
     if (error) {
       console.log(error);
-      console.log(env.MAIL_NAME)
     } else {
       console.log("Ready to Send");
     }
+  });
+
+  router.post("/contact", (req, res) => {
+    const name = req.body.name;
+    const email = req.body.email;
+    const message = req.body.message; 
+    const mail = {
+      from: name,
+      to: "aaronlangley32@hotmail.com",
+      subject: "Contact Form Submission",
+
+      html: `<p>Name: ${name}</p>
+             <p>Email: ${email}</p>
+             <p>Message: ${message}</p>`,
+    };
+    contactEmail.sendMail(mail, (error) => {
+      if (error) {
+        res.json({ status: "ERROR" });
+      } else {
+        res.json({ status: "Message Sent" });
+      }
+    });
   });

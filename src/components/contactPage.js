@@ -48,7 +48,6 @@ const Contact = () => {
           </SocialsIcon>
         </SocialsContainer>
         <FormContainer onSubmit={handleSubmit}>
-          {window.env.MAIL_NAME}
           <div>
             <label htmlFor="name">Name:</label>
             <input type="text" id="name" required />
