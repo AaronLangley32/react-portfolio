@@ -53,11 +53,6 @@ export const Main = styled.div`
     width: 100%;
     height: 100%;
 `
-export const FormContainer = styled.form`
-    width: 60%;
-    height: 80%;
-    background-color: purple;
-`
 export const SocialsContainer = styled.div`
     width: 20%;
     height: 80%;
@@ -78,4 +73,12 @@ export const SocialsIcon = styled.a`
     margin: 1.5rem 0rem;
     color: #ffffff;
 `
-
+export const FormContainer = styled.form`
+    width: 60%;
+    height: 80%;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
