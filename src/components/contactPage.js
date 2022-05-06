@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { PageBody, Header, Main, FormContainer, SocialsContainer, SocialsIcon } from '../CSS/contactPageStyles'
+import { PageBody, Header, Main, FormContainer, SocialsContainer, SocialsIcon, SubmitButton, MessageInput, NameEmailInputs, Form } from '../CSS/contactPageStyles'
 import { FaLinkedinIn, FaGithub, FaTwitter, FaDiscord, FaTwitch } from 'react-icons/fa'
 import '../CSS/contactPageClasses.css'
 const Contact = () => {
@@ -31,36 +31,29 @@ const Contact = () => {
       </Header>
       <Main>
         <SocialsContainer>
-          <SocialsIcon className="LinkedIn">
+          <SocialsIcon href="https://www.linkedin.com/in/aaron--langley/" target="_blank" className="LinkedIn">
             <FaLinkedinIn />
           </SocialsIcon>
-          <SocialsIcon className="Github">
+          <SocialsIcon href="https://github.com/AaronLangley32" target="_blank" className="Github">
             <FaGithub />
           </SocialsIcon>
-          <SocialsIcon className="Twitter">
+          <SocialsIcon href="https://twitter.com/thrillerCS" target="_blank"  className="Twitter">
             <FaTwitter />
           </SocialsIcon>
-          <SocialsIcon className="Discord">
+          <SocialsIcon href="https://discordapp.com/users/177927164774187008" target="_blank"  className="Discord">
             <FaDiscord />
           </SocialsIcon>
-          <SocialsIcon className="Twitch">
+          <SocialsIcon href="https://twitch.tv/thrillerlive" target="_blank"  className="Twitch">
             <FaTwitch />
           </SocialsIcon>
         </SocialsContainer>
         <FormContainer onSubmit={handleSubmit}>
-          <div className="form">
-            <div className="leftContainer">
-              <label htmlFor="name">Name:</label>
-              <input type="text" id="name" required />
-              <label htmlFor="email">Email:</label>
-              <input type="email" id="email" required />
-            </div>
-            <div className="rightContainer">
-              <label htmlFor="message">Message:</label>
-              <textarea id="message" required />
-            </div>
-          </div>
-          <button type="submit">{status}</button>
+          <Form>
+            <NameEmailInputs htmlFor="name" placeholder="Name" type="text" id="name" required className='input'></NameEmailInputs>
+            <NameEmailInputs input htmlFor="email" placeholder="Email" type="email" id="email" required className='input'></NameEmailInputs>
+            <MessageInput htmlFor="message" placeholder="Message" id="message" required className='inputMessage'></MessageInput>
+            <SubmitButton type="submit" className="submitButton">{status}</SubmitButton>
+          </Form>
         </FormContainer>
       </Main>
     </PageBody>
