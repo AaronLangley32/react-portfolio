@@ -77,7 +77,7 @@ export const SocialsIcon = styled.a`
         transform: scale(1.1);
     }
 `
-export const FormContainer = styled.form`
+export const FormContainer = styled.div`
     width: 60%;
     height: 80%;
     /* background-color: purple; */

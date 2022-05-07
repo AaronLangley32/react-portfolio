@@ -47,10 +47,10 @@ const Contact = () => {
             <FaTwitch />
           </SocialsIcon>
         </SocialsContainer>
-        <FormContainer onSubmit={handleSubmit}>
-          <Form>
+        <FormContainer>
+          <Form onSubmit={handleSubmit}>
             <NameEmailInputs htmlFor="name" placeholder="Name" type="text" id="name" required className='input'></NameEmailInputs>
-            <NameEmailInputs input htmlFor="email" placeholder="Email" type="email" id="email" required className='input'></NameEmailInputs>
+            <NameEmailInputs htmlFor="email" placeholder="Email" type="email" id="email" required className='input'></NameEmailInputs>
             <MessageInput htmlFor="message" placeholder="Message" id="message" required className='inputMessage'></MessageInput>
             <SubmitButton type="submit" className="submitButton">{status}</SubmitButton>
           </Form>
