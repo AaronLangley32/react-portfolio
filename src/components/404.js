@@ -1,8 +1,14 @@
 import React from 'react'
-
+import { Link } from "react-router-dom"
+import { PageBody } from '../CSS/404Styles'
 const Error = () => {
   return (
-    <div>Page Not Found</div>
+    <PageBody>
+      <div>
+        <p>That page doesn't exist.</p>
+        <Link to="/">Return to homepage</Link>
+      </div>
+    </PageBody>
   )
 }
 

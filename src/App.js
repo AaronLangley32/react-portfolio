@@ -11,7 +11,7 @@ import Experiences from './components/experiencesPage';
 import Projects from './components/projectsPage';
 import Skills from './components/skillsPage';
 import Background from './components/backgroundAnimation';
-
+import Error from './components/404';
 
 function App() {
   const [theme, setTheme] = useState("dark")
@@ -35,6 +35,7 @@ function App() {
           <Route path="skills" element={<Skills />}/>
           <Route path="projects" element={<Projects />}/>
           <Route path="contact" element={<Contact />}/>
+          <Route path="*" element={<Error />}/>
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
