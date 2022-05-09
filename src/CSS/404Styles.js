@@ -3,9 +3,13 @@ import styled from 'styled-components'
 export const PageBody = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    /* background-color: green; */
-    margin-left: 7rem;
+    text-align: center;
+    font-size: 4rem;
+    font-family: OpenSans;
+    font-variation-settings: 'wght' 400, 'wdth' 75;
+    color: ${props => props.theme.fontColor};
     position: absolute;
     height: auto;
     width: auto;
@@ -15,9 +19,7 @@ export const PageBody = styled.div`
     right:0;
     z-index: -1;
     @media screen and (max-width: 990px) {
-        margin-left: 6.5rem;
     }
     @media screen and (max-width: 672px) {
-        margin: 0rem 0rem 0rem 0rem;
     }
 `

@@ -48,7 +48,7 @@ const About = () => {
               </ToggleContainer>
           </Q>
           {extendQA1 && (
-            <A>I can bring a new brand or start-up into the E-commerce space with a fully custom & modern web design.
+            <A>I can bring a new brand or start-up into the Ecommerce space with a fully custom & modern web design.
             <PageRedirect>
               <Link to="/contact">Get In Touch</Link>
               <IoIosArrowRoundForward />
@@ -69,7 +69,7 @@ const About = () => {
               </ToggleContainer>           
           </Q>
           {extendQA2 && (
-            <A>Check out the portfolio section to see some of my projects.
+            <A>Check out my portfolio section to see what I'm capable of!
             <PageRedirect>
               <Link to="/projects">Let Me See</Link>
               <IoIosArrowRoundForward />
@@ -90,7 +90,7 @@ const About = () => {
               </ToggleContainer>           
           </Q>
           {extendQA3 && (
-            <A>I'm currently exploring options for a Full-Time position. Let's get in touch!
+            <A>I'm currently exploring opportunities for Full-Time positions. Let's get in touch!
               <PageRedirect>
                 <Link to="/contact">Hire Me</Link>
                 <IoIosArrowRoundForward />

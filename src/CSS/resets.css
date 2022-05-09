@@ -76,6 +76,7 @@ select {
     font: inherit;
 }
 
+/* IOS specific form reset */
 input,
 textarea {
     border-radius: 0;
