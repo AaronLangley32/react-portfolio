@@ -29,8 +29,6 @@ export const PageBody = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: orange; */
-    margin-left: 7rem;
     position: absolute;
     height: auto;
     width: auto;
@@ -40,10 +38,8 @@ export const PageBody = styled.div`
     right:0;
     z-index: -1;
     @media screen and (max-width: 990px) {
-        margin-left: 6.5rem;
     }
     @media screen and (max-width: 672px) {
-        margin: 0rem 0rem 9rem 0rem;
     }
 `
 export const IconContainer = styled.div`

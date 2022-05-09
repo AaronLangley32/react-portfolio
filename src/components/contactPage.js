@@ -25,7 +25,7 @@ const Contact = () => {
     alert(result.status);
   };
   return (
-    <PageBody>
+    <PageBody className="pageBody">
       <Header>
         Let's Get In Touch
       </Header>

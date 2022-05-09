@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { IoIosArrowDropdown, IoIosArrowDropup, IoIosArrowRoundForward } from 'react-icons/io'
-import { PageBody, Header1, Header2, HeaderWords, Main, QAContainer, Q, A, PageRedirect, AvatarContainer, AvatarText, AvatarImage, AvatarRoom } from '../CSS/aboutPageStyles'
+import { PageBody, Header1, Header2, MobileHeader1, MobileHeader2, HeaderWords, Main, QAContainer, Q, A, PageRedirect, AvatarContainer, AvatarText, AvatarImage, AvatarRoom } from '../CSS/aboutPageStyles'
 import { Link } from 'react-router-dom'
 import { ToggleContainer } from './ToggleButton'
 import '../CSS/headerAnimation.css'
@@ -26,16 +26,24 @@ const About = () => {
         <HeaderWords className="word7">Level</HeaderWords>
         <HeaderWords className="word8">Designer.</HeaderWords>
       </Header2>
+      <MobileHeader1 className="page_header">
+        <HeaderWords className="word1">Aaron</HeaderWords>
+        <HeaderWords className="word2">Langley,</HeaderWords>
+      </MobileHeader1>
+      <MobileHeader2 className="page_header2">
+        <HeaderWords className="word3">Freelance</HeaderWords>
+        <HeaderWords className="word4">Web-Developer.</HeaderWords>
+      </MobileHeader2>
       <Main className="main">
         <QAContainer>
-          <Q>Are you looking to create a strong online presence?
-              <ToggleContainer onClick={() => {
+          <Q onClick={() => {
                 setExtendQA1((curr1) => !curr1);
                 setExtendQA2((curr2) => false);
                 setExtendQA3((curr3) => false);
                 setExtendQA4((curr4) => false);
                 }}
-              >
+          >Are you looking to create a strong online presence?
+              <ToggleContainer>
                 {extendQA1 ? <IoIosArrowDropup /> : <IoIosArrowDropdown /> }
               </ToggleContainer>
           </Q>
@@ -49,19 +57,19 @@ const About = () => {
           )}  
         </QAContainer>
         <QAContainer>
-          <Q>Need updates or a complete redesign to your website?
-              <ToggleContainer onClick={() => {
+          <Q onClick={() => {
                 setExtendQA1((curr1) => false);
                 setExtendQA2((curr2) => !curr2);
                 setExtendQA3((curr3) => false);
                 setExtendQA4((curr4) => false);
                 }}
-              >
+          >Need updates or a complete redesign to your website?
+              <ToggleContainer>
                 {extendQA2 ? <IoIosArrowDropup /> : <IoIosArrowDropdown /> }
               </ToggleContainer>           
           </Q>
           {extendQA2 && (
-            <A>Check out the portfolio section to see some before & afters.
+            <A>Check out the portfolio section to see some of my projects.
             <PageRedirect>
               <Link to="/projects">Let Me See</Link>
               <IoIosArrowRoundForward />
@@ -70,14 +78,14 @@ const About = () => {
           )}
         </QAContainer>
         <QAContainer>
-          <Q>Think I would be a good fit to your team / company?
-              <ToggleContainer onClick={() => {
+          <Q onClick={() => {
                 setExtendQA1((curr1) => false);
                 setExtendQA2((curr2) => false);
                 setExtendQA3((curr3) => !curr3);
                 setExtendQA4((curr4) => false);
                 }}
-              >
+          >Think I would be a good fit to your team / company?
+              <ToggleContainer>
                 {extendQA3 ? <IoIosArrowDropup /> : <IoIosArrowDropdown /> }
               </ToggleContainer>           
           </Q>
@@ -91,14 +99,14 @@ const About = () => {
           )} 
         </QAContainer>
         <QAContainer>
-          <Q>In the market for a private Source Engine Level Designer?
-              <ToggleContainer onClick={() => {
+          <Q onClick={() => {
                 setExtendQA1((curr1) => false);
                 setExtendQA2((curr2) => false);
                 setExtendQA3((curr3) => false);
                 setExtendQA4((curr4) => !curr4);
                 }}
-              >
+          >In the market for a private Source Engine Level Designer?
+              <ToggleContainer>
                 {extendQA4 ? <IoIosArrowDropup /> : <IoIosArrowDropdown /> }
               </ToggleContainer>           
           </Q>

@@ -1,14 +1,11 @@
 import styled from "styled-components";
 import img1 from '../images/Profile1.png';
-// import img2 from '../images/Profile2.png';
 import img3 from '../images/Angry.png';
 
 export const PageBody = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: green; */
-    margin-left: 7rem;
     position: absolute;
     height: auto;
     width: auto;
@@ -18,17 +15,14 @@ export const PageBody = styled.div`
     right:0;
     z-index: -1;
     @media screen and (max-width: 990px) {
-        margin-left: 6.5rem;
     }
     @media screen and (max-width: 672px) {
-        margin: 0rem 0rem 0rem 0rem;
     }
 `
 export const Header1 = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: red; */
     width: 70rem;
     height: 10rem;
     font-size: 7rem;
@@ -43,17 +37,13 @@ export const Header1 = styled.div`
         margin-top: 2rem;
     }
     @media screen and (max-width: 672px) {
-        width: 33rem;
-        height: 5rem;
-        font-size: 3.5rem;
-        margin-top: 5rem;
+        display: none;
     }
 `
 export const Header2 = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: blue; */
     width: 34rem;
     height: 4rem;
     font-size: 3rem;
@@ -68,10 +58,42 @@ export const Header2 = styled.div`
         margin-top: 0rem;
     }
     @media screen and (max-width: 672px) {
-        width: 22rem;
-        height: 5rem;
-        font-size: 2rem;
-        margin-top: 0rem;
+        display: none;
+    }
+`
+export const MobileHeader1 = styled.div`
+        display: none;
+    @media screen and (max-width: 990px) {
+        display: none;
+    }
+    @media screen and (max-width: 672px) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: OpenSans;
+        font-variation-settings: 'wght' 400, 'wdth' 75;
+        color: ${props => props.theme.fontColor};
+        width: 14rem;
+        height: 4rem;
+        font-size: 2.5rem;
+        margin-top: 5rem;
+    }
+`
+export const MobileHeader2 = styled.div`
+        display: none;
+    @media screen and (max-width: 990px) {
+        display: none;
+    }
+    @media screen and (max-width: 672px) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: OpenSans;
+        font-variation-settings: 'wght' 400, 'wdth' 75;
+        color: ${props => props.theme.fontColor};
+        width: 24rem;
+        height: 4rem;
+        font-size: 2.5rem;
     }
 `
 export const HeaderWords = styled.div`
@@ -85,7 +107,6 @@ export const Main = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: red; */
     margin-top: 7rem;
     width: 80vw;
     height: 70vh;
@@ -97,7 +118,7 @@ export const Main = styled.div`
         max-width: 670px;
     }
     @media screen and (max-width: 672px) {
-        margin-top: 2rem;
+        margin-top: 3rem;
         width: 80vw;
         height: 50vh;
         max-width: 670px;
@@ -114,11 +135,11 @@ export const QAContainer = styled.div`
     color: ${props => props.theme.fontColor};
     @media screen and (max-width: 990px) {
         margin: 3rem 0rem;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     @media screen and (max-width: 672px) {
         margin: 2rem 0rem;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
 `
 export const Q = styled.div`
@@ -143,10 +164,8 @@ export const A = styled.div`
     border-bottom: dashed 0.1rem ${props => props.theme.fontColorAlt};
     border-radius: 1rem 1rem 1rem 1rem;
     padding: 2rem 1rem;
-    /* background-color: red; */
     align-items: center;
     text-align: center;
-    /* text-decoration: underline dotted 0.1rem; */
     max-width: 450px;
     font-size: 1.1em;
     color: ${props => props.theme.fontColorAlt};
@@ -165,7 +184,6 @@ export const PageRedirect = styled.div`
     color: #035efc;
     transition: all 100ms ease-in;
     font-size: 1.75rem;
-    /* background-color: red; */
     padding: 0.3rem 1.5rem 0.3rem 2rem;
     border-radius: 2rem;
     border: 0.1rem solid #035efc;
@@ -188,7 +206,6 @@ export const AvatarContainer = styled.div`
     display: flex;
     width: 250px;
     height: 300px;
-    /* background-color: red; */
     position: absolute;
     top: 25vh;
     right: 7%;
@@ -207,7 +224,6 @@ export const AvatarText = styled.div`
     color: ${props => props.theme.fontColor};
     width: 250px;
     height: 50px;
-    /* background-color: green; */
     position: absolute;
     top: -10%;
     right: 35%;
@@ -218,7 +234,6 @@ export const AvatarImage = styled.div`
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    /* background-color: purple; */
     position: absolute;
     right: 0;
     bottom: 0;
@@ -232,7 +247,6 @@ export const AvatarRoom = styled.div`
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    /* background: linear-gradient(35deg, rgba(18,19,15,0) 50%, rgba(250,249,247,0.4) 100%); */
     position: absolute;
     right: 0;
     bottom: 0; 

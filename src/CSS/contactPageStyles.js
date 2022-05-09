@@ -4,8 +4,6 @@ export const PageBody = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: green; */
-    margin-left: 7rem;
     position: absolute;
     height: auto;
     width: auto;
@@ -15,17 +13,14 @@ export const PageBody = styled.div`
     right:0;
     z-index: -1;
     @media screen and (max-width: 990px) {
-        margin-left: 6.5rem;
     }
     @media screen and (max-width: 672px) {
-        margin: 0rem 0rem 9rem 0rem;
     }
 `
 export const Header = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: red; */
     width: 70rem;
     height: 10rem;
     font-size: 7rem;
@@ -43,7 +38,7 @@ export const Header = styled.div`
         width: 33rem;
         height: 5rem;
         font-size: 3.5rem;
-        margin-top: 5rem;
+        margin-top: 6rem;
     }
 `
 export const Main = styled.div`
@@ -52,15 +47,25 @@ export const Main = styled.div`
     margin-top: 2rem;
     width: 100%;
     height: 100%;
+    @media screen and (max-width: 990px) {
+    }
+    @media screen and (max-width: 672px) {
+        margin-top: 0;
+    }
 `
 export const SocialsContainer = styled.div`
     width: 20%;
     height: 80%;
-    /* background-color: blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 990px) {
+    }
+    @media screen and (max-width: 672px) {
+        margin: 3rem 2rem 0rem 0rem;
+        height: 70%;
+    }
 `
 export const SocialsIcon = styled.a`
     display: flex;
@@ -76,27 +81,59 @@ export const SocialsIcon = styled.a`
     &:hover {
         transform: scale(1.1);
     }
+    @media screen and (max-width: 990px) {
+    }
+    @media screen and (max-width: 672px) {
+        font-size: 2.5rem;
+        width: 5rem;
+        aspect-ratio: 1 / 1;
+        border-radius: 0.75rem;
+    }
 `
 export const FormContainer = styled.div`
     width: 60%;
     height: 80%;
-    /* background-color: purple; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 990px) {
+    }
+    @media screen and (max-width: 672px) {
+        height: 70%;
+    }
 `
-export const SubmitButton = styled.button`
-    position: absolute;
-    background: none;
-    border: 1px ${props => props.theme.fontColor} solid;
-    font-size: 2rem;
-    width: 20rem;
-    height: 5rem;
-    bottom: -5.3rem;
-    right: 0rem;
-    color: ${props => props.theme.fontColor};
-    cursor: pointer;
+export const Form = styled.form`
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 65%;
+    font-size: 1.5rem;
+    font-family: OpenSans;
+    opacity: 0.75;
+    @media screen and (max-width: 990px) {
+    }
+    @media screen and (max-width: 672px) {
+        width: 100%;
+        height: 75%;
+    }
+`
+export const NameEmailInputs = styled.input`
+    background: ${props => props.theme.fontColor};
+    border: none;
+    width: 100%;
+    height: 4rem;
+    margin: 0.3rem 0rem;
+    text-indent: 1rem;
+    color: ${props => props.theme.body};
+    ::placeholder {
+        font-style: italic;
+    }
+    :focus {
+        border: none;
+        outline: none;
+    }
 `
 export const MessageInput = styled.textarea`
     background: ${props => props.theme.fontColor};
@@ -116,29 +153,20 @@ export const MessageInput = styled.textarea`
         outline: none;
     }
 `
-export const NameEmailInputs = styled.input`
-    background: ${props => props.theme.fontColor};
-    border: none;
-    width: 100%;
-    height: 4rem;
-    margin: 0.3rem 0rem;
-    text-indent: 1rem;
-    color: ${props => props.theme.body};
-    ::placeholder {
-        font-style: italic;
+export const SubmitButton = styled.button`
+    position: absolute;
+    background: none;
+    border: 1px ${props => props.theme.fontColor} solid;
+    font-size: 2rem;
+    width: 20rem;
+    height: 5rem;
+    bottom: -5.3rem;
+    right: 0rem;
+    color: ${props => props.theme.fontColor};
+    cursor: pointer;
+    @media screen and (max-width: 990px) {
     }
-    :focus {
-        border: none;
-        outline: none;
+    @media screen and (max-width: 672px) {
+        width: 100%;
     }
-`
-export const Form = styled.form`
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    height: 65%;
-    font-size: 1.5rem;
-    font-family: OpenSans;
-    opacity: 0.75;
 `

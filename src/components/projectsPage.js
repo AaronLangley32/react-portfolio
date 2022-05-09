@@ -11,11 +11,10 @@ const Projects = () => {
         <ShowCaseContainer>
           <Item href="https://ableclosets.com" className="item1"></Item>
           <Item className="item2"></Item>
-          <Item className="item3"></Item>
-          
-          <Item className="item4"></Item>
+          <Item className="item3"></Item>   
+          <Item className="item4">More Projects To Come</Item>
           <Item className="item5">More Projects To Come</Item>
-          <Item className="item6"></Item>
+          <Item className="item6">More Projects To Come</Item>
         </ShowCaseContainer>
       </Main>
     </PageBody>
