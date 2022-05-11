@@ -1,29 +1,8 @@
-import React, { useState } from 'react'
-import { PageBody, Header, Main, FormContainer, SocialsContainer, SocialsIcon, SubmitButton, MessageInput, NameEmailInputs, Form } from '../CSS/contactPageStyles'
+import React from 'react'
+import { PageBody, Header, Main, FormContainer, SocialsContainer, SocialsIcon, EmailLink, FormText } from '../CSS/contactPageStyles'
 import { FaLinkedinIn, FaGithub, FaTwitter, FaDiscord, FaTwitch } from 'react-icons/fa'
 import '../CSS/contactPageClasses.css'
 const Contact = () => {
-  const [status, setStatus] = useState("Submit");
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("Sending...");
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
-  };
   return (
     <PageBody className="pageBody">
       <Header>
@@ -48,12 +27,15 @@ const Contact = () => {
           </SocialsIcon>
         </SocialsContainer>
         <FormContainer>
-          <Form onSubmit={handleSubmit}>
-            <NameEmailInputs htmlFor="name" placeholder="Name" type="text" id="name" required className='input'></NameEmailInputs>
-            <NameEmailInputs htmlFor="email" placeholder="Email" type="email" id="email" required className='input'></NameEmailInputs>
-            <MessageInput htmlFor="message" placeholder="Message" id="message" required className='inputMessage'></MessageInput>
-            <SubmitButton type="submit" className="submitButton">{status}</SubmitButton>
-          </Form>
+          <FormText>
+            Send me an Email for any type of inquiry or information!
+          </FormText>
+          <FormText>
+            Also feel free to Email with for help with Front End questions!
+          </FormText>
+          <EmailLink href="mailto:Aaronlangley32@hotmail.com">
+            Email Me
+          </EmailLink>
         </FormContainer>
       </Main>
     </PageBody>

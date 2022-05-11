@@ -21,11 +21,11 @@ const Navbar = () => {
                     <FaCode />
                 </MenuLink>
             </Link>
-            <Link to="skills">
+            {/* <Link to="skills">
                 <MenuLink className="link3">
                     <FaWrench />
                 </MenuLink>
-            </Link>
+            </Link> */}
             <Link to="projects">
                 <MenuLink className="link4">
                     <FaListUl />
