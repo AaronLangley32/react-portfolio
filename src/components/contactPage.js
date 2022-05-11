@@ -31,7 +31,7 @@ const Contact = () => {
             Send me an Email for any type of inquiry or information!
           </FormText>
           <FormText>
-            Also feel free to Email with for help with Front End questions!
+            Also feel free to Email me for help with Front End questions!
           </FormText>
           <EmailLink href="mailto:Aaronlangley32@hotmail.com">
             Email Me
